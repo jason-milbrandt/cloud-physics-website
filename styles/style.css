@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #162093;
     color: white;
     padding: 10px;
     text-align: center;
@@ -17,9 +17,19 @@ header h1 {
     margin: 0;
 }
 
+/* Reset default margin and padding for headers */
+h1, h2 {
+    margin-top: 5px; /* Adjust this value to reduce space above the header */
+    margin-bottom: 10px; /* Adjust this value to reduce space below the header */
+    padding: 0; /* Remove any default padding (if necessary) */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 5; /* Remove any space above the <ul> */
+    margin-bottom: 0; /* Remove any space below the <ul> */
+    padding: 0; /* Remove any padding within the <ul> */
 }
 
 nav ul li {
@@ -44,4 +54,70 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+table {
+    width: 100%; /* Makes the table take up the full width of the container */
+    border-collapse: collapse; /* Makes the table borders collapse into a single border */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add a border to table cells */
+    padding: 8px; /* Add some padding inside the cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light background for headers */
+}
+
+/* Specific column widths */
+th:nth-child(1), td:nth-child(1) {
+    width: 20%; /* Set width of the first column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 10%; /* Set width of the second column */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 25%; /* Set width of the third column */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 45%; /* Set width of the third column */
+}
+
+/* New table styles */
+.projects-table {
+    width: calc(100% - 40px);
+    border-collapse: collapse;
+    margin: 20px ; /* Adds 20px margin on top, bottom, left, and right */
+}
+
+.projects-table th, .projects-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.projects-table th {
+    background-color: #f2f2f2;
+}
+
+/* New column widths for the new table */
+.projects-table th:nth-child(1), .projects-table td:nth-child(1) {
+    width: 15%; /* First column width */
+}
+
+.projects-table th:nth-child(2), .projects-table td:nth-child(2) {
+    width: 20%; /* Second column width */
+}
+
+.projects-table th:nth-child(3), .projects-table td:nth-child(3) {
+    width: 45%; /* Third column width */
+}
+
+.projects-table th:nth-child(4), .projects-table td:nth-child(4) {
+    width: 15%; /* Third column width */
 }
