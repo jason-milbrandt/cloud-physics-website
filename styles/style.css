@@ -7,7 +7,8 @@ body {
 }
 
 header {
-    background-color: #162093;
+    /* background-color: #162093; */
+    background-color: #16935f;
     color: white;
     padding: 10px;
     text-align: center;
@@ -42,7 +43,7 @@ header h1 {
 
 header h2 {
     margin: 0;
-/*    color: rgb(244, 236, 2);  */
+    color: white;
 }
 
 /* Add margin specifically for header h1 and h2 */
@@ -57,6 +58,16 @@ header h1, header h2 {
 /*     margin-bottom: 5px; /* Adjust this value to reduce space below the header */
 /*     padding: 0; /* Remove any default padding (if necessary) */
 /* } */
+
+h1 {
+    /* color: rgb(188, 17, 17); */
+    font-size: 2em; /* Adjust the font size of the h1 */
+}
+
+h2 {
+    color: rgb(69, 17, 188);
+    font-size: 1.5em; /* Adjust the font size of the h2 */
+}
 
 nav ul {
     list-style-type: none;
@@ -93,6 +104,7 @@ footer {
 table {
     width: 100%; /* Makes the table take up the full width of the container */
     border-collapse: collapse; /* Makes the table borders collapse into a single border */
+    background-color: white;
 }
 
 th, td {
@@ -102,7 +114,8 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2; /* Light background for headers */
+    background-color: white; /* Light background for headers */
+    /* background-color: #f2f2f2; Light background for headers */
 }
 
 /* Specific column widths */
@@ -136,7 +149,7 @@ th:nth-child(4), td:nth-child(4) {
 }
 
 .projects-table th {
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 /* New column widths for the new table */
