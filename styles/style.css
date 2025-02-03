@@ -12,17 +12,51 @@ header {
     padding: 10px;
     text-align: center;
 }
+/* Style for the header */
+header {
+/*     display: flex;
+    align-items: center; /* Vertically align items in the center */
+ */    
+    justify-content: center; /* Center the text and logo horizontally */
+    background-color: #162093;
+    color: white;
+    padding: 10px;
+}
+
+/* Style for the logo */
+header .logo {
+    height: 100%; /* Make the logo the same height as the header */
+    max-height: 80px; /* Optional: set a max height if needed */
+    margin-right: 20px; /* Adds space between the logo and the text */
+}
+
+/* Optional: Style for h2 and h1 to ensure they look good next to the logo */
+header h2, header h1 {
+    margin: 0;
+    padding: 0;
+}
 
 header h1 {
     margin: 0;
 }
 
-/* Reset default margin and padding for headers */
-h1, h2 {
-    margin-top: 5px; /* Adjust this value to reduce space above the header */
-    margin-bottom: 10px; /* Adjust this value to reduce space below the header */
-    padding: 0; /* Remove any default padding (if necessary) */
+header h2 {
+    margin: 0;
+/*    color: rgb(244, 236, 2);  */
 }
+
+/* Add margin specifically for header h1 and h2 */
+header h1, header h2 {
+    margin-top: 5px; /* Adjust space above the headers */
+    margin-bottom: 10px; /* Adjust space below the headers */
+}
+
+/* Reset default margin and padding for headers */
+/* h1, h2 {
+/*     margin-top: 15px; /* Adjust this value to reduce space above the header */
+/*     margin-bottom: 5px; /* Adjust this value to reduce space below the header */
+/*     padding: 0; /* Remove any default padding (if necessary) */
+/* } */
 
 nav ul {
     list-style-type: none;
